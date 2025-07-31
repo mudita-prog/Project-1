@@ -1,0 +1,9 @@
+Amazon_Source\Product_Page.class
+Amazon_Source\Amazon_HomePage.class
+Amazon_Source\Amazon_LoginPage.class
+Amazon_Source\Edit_Profile_Page.class
+Amazon_Source\Filter_Page.class
+Amazon_Source\Amazon_RegistrationPage.class
+Amazon_Source\Amazon_AccountPage.class
+Amazon_Source\Amazon_DDT.class
+Amazon_Source\Listeners_Logic.class
