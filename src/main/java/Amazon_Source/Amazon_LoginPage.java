@@ -1,9 +1,13 @@
 package Amazon_Source;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Amazon_LoginPage extends Amazon_DDT {
 
@@ -14,10 +18,10 @@ public class Amazon_LoginPage extends Amazon_DDT {
 	WebElement Username_field;
 	
 	@FindBy (xpath="//input[@class='a-button-input']")
-	public
+	
 	WebElement Continue_Button;
 	
-	@FindBy (id="ap_password")
+	@FindBy (xpath="//input[@id='ap_password']")
 	public
 	WebElement PasswordField;
 	
@@ -39,7 +43,11 @@ public class Amazon_LoginPage extends Amazon_DDT {
 	public void Continue_Button()
 	{
 		Continue_Button.click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(PasswordField));
 	}
+	
 	
 	public void Invalid_username()
 	{

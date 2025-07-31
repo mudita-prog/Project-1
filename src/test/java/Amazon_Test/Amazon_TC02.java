@@ -2,7 +2,8 @@ package Amazon_Test;
 
 import java.io.IOException;
 
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -31,6 +32,8 @@ public class Amazon_TC02  extends _Launch_Quit {
 		    
 		//    Assert.assertTrue(lp.Continue_Button.isEnabled(), "continue button is noy enabled");
 		    lp.Continue_Button();
+		    
+		    
 		    
 		//    Assert.assertTrue(lp.PasswordField.isEnabled(), "password button is noy enabled");
 		    lp.valid_password();

@@ -5,7 +5,6 @@
     <classes>
       <class name="Amazon_Test.Amazon_TC02">
         <methods>
-          <include name="quit"/>
           <include name="Verify_ValidCreds"/>
           <include name="Launch"/>
         </methods>

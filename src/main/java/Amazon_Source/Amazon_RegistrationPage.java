@@ -17,7 +17,7 @@ public class Amazon_RegistrationPage extends Amazon_DDT{
 	//public
 	WebElement Enter_Email;
 	
-	@FindBy(xpath="//input[@aria-labelledby='intention-submit-button-announce']")
+	@FindBy(xpath="//input[@type='submit']")
 	public
 	//public
 	WebElement ProceedButton;
